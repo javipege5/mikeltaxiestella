@@ -1,5 +1,4 @@
 @import url("fontawesome-all.min.css");
-@import url("https://fonts.googleapis.com/css?family=Roboto:100,300,100italic,300italic");
 
 /*
 	Landed by HTML5 UP
@@ -53,6 +52,7 @@ table {
 
 body {
 	-webkit-text-size-adjust: none;
+	text-size-adjust: none;
 }
 
 mark {
@@ -210,7 +210,7 @@ input, select, textarea {
 	}
 
 	pre {
-		-webkit-overflow-scrolling: touch;
+		overflow-x: auto;
 		font-family: "Courier New", monospace;
 		font-size: 0.9em;
 		margin: 0 0 2em 0;
@@ -2753,7 +2753,6 @@ input, select, textarea {
 /* Table */
 
 	.table-wrapper {
-		-webkit-overflow-scrolling: touch;
 		overflow-x: auto;
 	}
 
@@ -4110,3 +4109,85 @@ input, select, textarea {
 					}
 
 	}
+
+	/* CUSTOM CSS BELOW HERE */
+
+	/* WhatsApp icon and phone in header */
+#logo .fa-whatsapp, .title .fa-whatsapp {
+    color: #25d366;
+    margin-right: 6px;
+}
+#logo a {
+    text-decoration: none;
+    color: inherit;
+}
+#logo a span, .title a {
+    font-weight: bold;
+}
+
+/* Banner title */
+.accent {
+    color: #b03236;
+    font-weight: bold;
+}
+
+
+/* Contacto section */
+#contacto a.fa-whatsapp,
+#contacto a .fa-whatsapp {
+    color: #25d366;
+    margin-right: 6px;
+}
+#contacto a,
+#contacto a:visited {
+    text-decoration: none;
+    color: inherit;
+    border: 0;
+}
+#contacto a span, #contacto p.strong {
+    font-weight: bold;
+    color: white;
+}
+
+#contacto a span {
+    text-decoration: underline;
+}
+#contacto a:hover :not(.fa-whatsapp) {
+    color: #b03236;
+}
+
+/* Camino de Santiago icon */
+#servicios img.concha-icon {
+    position: relative;
+    top: 17%;
+    left: 2%;
+}
+
+/* Floating icon WhatsApp */
+.whatsapp-float {
+    position: fixed;
+    width: 80px;
+    height: 80px;
+    bottom: 65px;
+    right: 20px;
+    background-color: #25d366;
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 3px #3a3a3a;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+}
+
+.whatsapp-float:hover {
+    background-color: #128c7e;
+
+    .fa-whatsapp {
+        color: #fff;
+    }
+}

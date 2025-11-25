@@ -9,16 +9,25 @@
 		<title>Taxi en Estella | MIKEL</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<link rel="stylesheet" href="assets/css/custom.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,100italic,300italic&display=swap" rel="stylesheet">
+		<link rel="preload" href="assets/css/main.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+		<noscript><link rel="stylesheet" href="assets/css/main.css"></noscript>
+		<noscript>
+			<style>
+				body.landing.is-preload:before { display: none; }
+				body.landing.is-preload:after { display: none; }
+			</style>
+			<link rel="stylesheet" href="assets/css/main.css">
+		</noscript>
 	</head>
 	<body class="is-preload landing">
 		<div id="page-wrapper">
 			<!-- Header -->
 				<header id="header">
 					<h1 id="logo">
-						<a href="https://wa.me/34617463865?text=Hola%2C%20Mikel.%20Quiero%20informaci%C3%B3n%20sobre%20tus%20servicios." target="_blank">
+						<a href="https://wa.me/34617463865?text=Hola%2C%20Mikel.%20Quiero%20informaci%C3%B3n%20sobre%20tus%20servicios." target="_blank" rel="noopener">
 							<span class="icon brands fa-brands fa-whatsapp"></span>
 							<span>+34 617 46 38 65</span>
 						</a>
@@ -56,12 +65,12 @@
 									<header>
 										<h2>CONTACTO</h2>
 										<p>Llámame o escríbeme por WhatsApp.</p>
-										<a href="https://wa.me/34617463865?text=Hola%2C%20Mikel.%20Quiero%20informaci%C3%B3n%20sobre%20tus%20servicios." target="_blank">
+										<a href="https://wa.me/34617463865?text=Hola%2C%20Mikel.%20Quiero%20informaci%C3%B3n%20sobre%20tus%20servicios." target="_blank" rel="noopener">
 												<span class="icon brands fa-brands fa-whatsapp"></span>
 												<span>+34 617 46 38 65</span>
 										</a>
 										<p class="strong">mikeltaxiestella@gmail.com</p>
-										<a href="https://maps.app.goo.gl/ePFRxXEcGPBGuEuR8" target="_blank">
+										<a href="https://maps.app.goo.gl/ePFRxXEcGPBGuEuR8" target="_blank" rel="noopener">
 											<span>31200 Estella, Navarra</span></a>
 									</header>
 								</div>
@@ -148,22 +157,14 @@
 
 			<!-- Footer -->
 				<footer id="footer">
-					<!--<ul class="icons">
-						<li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
-						<li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
-						<li><a href="#" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-						<li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
-						<li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-						<li><a href="#" class="icon solid alt fa-envelope"><span class="label">Email</span></a></li>
-					</ul> -->
 					<ul class="copyright">
 						<li>&copy; 2025 mikeltaxiestella.com</li><li>Diseño base: <a href="http://html5up.net">HTML5 UP</a> bajo licencia CC BY 3.0</li>
 					</ul>
 				</footer>
 		</div>
 
-		<a href="https://wa.me/34617463865?text=Hola%2C%20Mikel.%20Quiero%20informaci%C3%B3n%20sobre%20tus%20servicios." class="whatsapp-float" target="_blank">
-    	<span class="icon brands fa-brands fa-whatsapp"></span>
+		<a href="https://wa.me/34617463865?text=Hola%2C%20Mikel.%20Quiero%20informaci%C3%B3n%20sobre%20tus%20servicios." class="whatsapp-float" target="_blank" rel="noopener" title="Contactar por WhatsApp">
+		<span class="icon brands fa-brands fa-whatsapp" aria-label="WhatsApp"></span>
 		</a>
 
 		<!-- Scripts -->
