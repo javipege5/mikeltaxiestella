@@ -593,7 +593,7 @@ input, select, textarea {
 			-webkit-animation: overlay-hide 1.5s ease-in forwards !important;
 			-ms-animation: overlay-hide 1.5s ease-in forwards !important;
 			animation: overlay-hide 1.5s ease-in forwards !important;
-			background: #1c1d26;
+			background: #182430;
 			content: '';
 			display: block;
 			height: 100%;
@@ -3082,7 +3082,6 @@ input, select, textarea {
 			-webkit-transition: -webkit-transform 1s ease, opacity 1s ease;
 			-ms-transition: -ms-transform 1s ease, opacity 1s ease;
 			transition: transform 1s ease, opacity 1s ease;
-			background: rgba(23, 24, 32, 0.95);
 			background: rgb(24 36 48 / 95%);
 			border-style: solid;
 			opacity: 1;
@@ -3148,6 +3147,10 @@ input, select, textarea {
 
 		.spotlight.style3 .content {
 			border-color: #39c088;
+		}
+
+		.spotlight.style4 .content {
+			border-color: #FEDC0B;
 		}
 
 		.spotlight.inactive .content {
@@ -3471,10 +3474,10 @@ input, select, textarea {
 		}
 
 		#banner:after {
-			background-image: -moz-linear-gradient(top, rgba(23, 24, 32, 0.95), rgba(23, 24, 32, 0.95)), url("images/overlay.png");;
-			background-image: -webkit-linear-gradient(top, rgba(23, 24, 32, 0.95), rgba(23, 24, 32, 0.95)), url("images/overlay.png");;
-			background-image: -ms-linear-gradient(top, rgba(23, 24, 32, 0.95), rgba(23, 24, 32, 0.95)), url("images/overlay.png");;
-			background-image: linear-gradient(top, rgba(23, 24, 32, 0.95), rgba(23, 24, 32, 0.95)), url("images/overlay.png");;
+			background-image: -moz-linear-gradient(top, rgba(24, 36, 48, 0.95), rgba(24, 36, 48, 0.95)), url("images/overlay.png");
+			background-image: -webkit-linear-gradient(top, rgba(24, 36, 48, 0.95), rgba(23, 24, 32, 0.95)), url("images/overlay.png");
+			background-image: -ms-linear-gradient(top, rgba(24, 36, 48, 0.95), rgba(23, 24, 32, 0.95)), url("images/overlay.png");
+			background-image: linear-gradient(top, rgba(24, 36, 48, 0.95), rgba(23, 24, 32, 0.95)), url("images/overlay.png");
 			content: '';
 			display: block;
 			height: 100%;
@@ -3888,6 +3891,7 @@ input, select, textarea {
 				width: 100%;
 				z-index: 10001;
 				background: #182430;
+				background: rgba(23, 24, 32);
 				box-shadow: 0 0.125em 0.125em 0 rgba(0, 0, 0, 0.125);
 			}
 
@@ -4149,6 +4153,10 @@ input, select, textarea {
     color: white;
 }
 
+#contacto p.m0{
+	margin-bottom: 0;
+}
+
 #contacto a span {
     text-decoration: underline;
 }
@@ -4156,11 +4164,17 @@ input, select, textarea {
     color: #b03236;
 }
 
+#servicios ul {
+	text-align: left;
+	margin-top: -1em;
+	line-height: 1.75em;
+}
+
 /* Camino de Santiago icon */
-#servicios img.concha-icon {
+#masservicios img.concha-icon {
     position: relative;
-    top: 17%;
-    left: 2%;
+    top: 2px;
+    width: 60%;
 }
 
 /* Floating icon WhatsApp */
@@ -4184,10 +4198,37 @@ input, select, textarea {
     transition: background-color 0.3s ease;
 }
 
-.whatsapp-float:hover {
-    background-color: #128c7e;
-
-    .fa-whatsapp {
-        color: #fff;
+@media (hover: hover) {
+    .whatsapp-float:hover {
+        background-color: #128c7e;
     }
 }
+.whatsapp-float:hover {
+	.fa-whatsapp {
+		color: #fff;
+	}
+}
+
+/* Footer sitemap: dos columnas responsivas */
+#footer {
+    padding: 2.5rem 0;
+    color: #ddd;
+    font-size: 0.95rem;
+}
+#footer a { color: inherit; text-decoration: none; }
+.footer-sitemap {
+    display: flex;
+    gap: 2.5rem;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-bottom: 1rem;
+}
+.footer-sitemap .links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    min-width: 180px;
+}
+.footer-sitemap .links li { margin: 0.35rem 0; }
+.footer-sitemap .links li a:hover { text-decoration: underline; }
