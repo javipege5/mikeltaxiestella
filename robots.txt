@@ -1,1 +1,4 @@
+User-agent: *
+Allow: /
+
 Sitemap: https://mikeltaxiestella.com/sitemap.xml
